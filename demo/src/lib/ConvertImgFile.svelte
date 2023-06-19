@@ -13,8 +13,10 @@
 </script>
 
 <div class="space-y-2.5">
-	<SelectFormat bind:format />
+	<SelectFormat id="img-format-file" bind:format />
+	<label class='sr-only' for='files'>File Dropzone</label>
 	<FileDropzone
+		id="files"
 		class="w-72 sm:w-96 p-16"
 		on:change={onChangeHandler}
 		name="files"

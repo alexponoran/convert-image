@@ -10,6 +10,6 @@
 		<label for="img-url">Image URL</label>
 		<input bind:value={imageUrl} class="py-2.5 px-4 w-full input" id="img-url" type="text" />
 	</div>
-	<SelectFormat bind:format />
+	<SelectFormat id="img-format-link" bind:format />
 	<button aria-label="Convert Image" type="submit" class="btn variant-filled w-24">Convert</button>
 </form>
