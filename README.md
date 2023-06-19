@@ -45,7 +45,7 @@ Below are some **examples**:
     	const target = e.target as HTMLInputElement;
     	const files = target.files as FileList;
     	const file = files[0];
-    	const fileName = file.name;
+    	const fileName = 'output'
     	convertImage(file, fileName, format);
     }
 
