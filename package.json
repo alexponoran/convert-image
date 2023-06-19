@@ -1,7 +1,7 @@
 {
  "name": "convert-image",
- "version": "1.1.2",
- "description": "Convert-Image is a small library that uses the browser's native image decoding capabilities to convert images to webp, avif, jpeg and png formats.",
+ "version": "1.1.3",
+ "description": "A small library that utilizes the native image decoding capabilities of web browsers to seamlessly convert images between the webp, avif, jpeg, and png formats.",
  "main": "index.js",
  "scripts": {
   "lint": "eslint . --ext .ts"
@@ -16,9 +16,11 @@
   "browser",
   "client",
   "client-side",
-  "no dependencies",
-  "native browser decoding",
-  "browser API"
+  "no external dependencies",
+  "browser decoding",
+  "browser API",
+  "canvas",
+  "blob"
  ],
  "author": "Alex Ponoran",
  "license": "MIT",
