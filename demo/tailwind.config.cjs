@@ -18,7 +18,7 @@ module.exports = {
 			'2xl': '1536px'
 		},
 		minHeight: {
-			screen: 'calc(100svh - 112px)'
+			screen: 'calc(100svh - 144px)'
 		},
 		textUnderlineOffset: {
 			3: '3px'
