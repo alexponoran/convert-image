@@ -6,7 +6,10 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 </script>
-
+<svelte:head>
+	<title>Convert-Image Demo</title>
+	<meta name="description" content="Demo for the convert-image package, a small library that utilizes the native image decoding capabilities of web browsers to seamlessly convert images between the webp, avif, jpeg, and png formats." />
+</svelte:head>
 <header class="text-3xl font-montserrat text-center py-4 h-16">
 	Demo for the <strong>convert-image</strong> package
 </header>
