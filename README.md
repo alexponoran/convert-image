@@ -30,7 +30,7 @@ Below are some **examples**:
 
     const imageSource = 'https://picsum.photos/200/300';
     const fileName = 'my-image';
-    const format = 'webp';
+    const format = 'webp' as 'jpg' | 'png' | 'webp' | 'avif';
 
     convertImage(imageSource, fileName, format)
 
@@ -39,16 +39,18 @@ Below are some **examples**:
     import convertImage from "convert-image";
 
     const fileInput = document.querySelector(".image-input");
-    const format = "webp";
-    fileInput.addEventListener("change", (event) => {
-    const target = event.target;
-    const file = target.files[0];
-    const fileName = file.name;
-    convertImage(file, fileName, format);
-    });
+    const format = "webp" as "jpg" | "png" | "webp" | "avif";
+    fileInput.addEventListener("change", (event) => onChangeHandler(event));
+    function onChangeHandler(e: Event): void {
+    	const target = e.target as HTMLInputElement;
+    	const files = target.files as FileList;
+    	const file = files[0];
+    	const fileName = file.name;
+    	convertImage(file, fileName, format);
+    }
 
     <!-- HTML -->
-    <input class="image-input" type="file"/>
+    <input class="image-input" type="file" accept="image/png, image/jpeg, image/webp, image/avif"/>
 
 # Supported Formats
 
