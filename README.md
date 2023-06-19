@@ -84,3 +84,4 @@ This project is licensed under the MIT License - see the LICENSE file in this re
 # Changelog
 
 1.1.2 - 7 June 2023 - Initial release
+1.1.3 - 19 June 2023 - Updated Readme to include TypeScript examples. Added demo webpage.
